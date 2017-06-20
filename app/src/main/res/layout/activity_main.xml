@@ -4,7 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.geohuo.dongnao.seniorui.MainActivity">
+    tools:context="com.geohuo.dongnao.seniorui.ui.MainActivity">
+
+    <com.geohuo.dongnao.seniorui.widget.MToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        app:mtitle="NDK测试" />
 
     <TextView
         android:id="@+id/sample_text"
