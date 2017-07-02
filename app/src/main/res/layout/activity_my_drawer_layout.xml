@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <com.geohuo.dongnao.seniorui.widget.myDrawerLayout.MyDrawLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--内容  区域-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/fake"
+            />
+        <!--侧滑区域  LinearLayout    ColorDrawable -->
+        <com.geohuo.dongnao.seniorui.widget.myDrawerLayout.MyDrawSlideBar
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:maxTranslationX="66dp"
+            android:background="@color/colorPrimaryDark"
+                 >
+            <TextView
+                android:textColor="@drawable/selector_tv_bg"
+                android:onClick="onClick"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/circle"
+                android:text="朋友圈" />
+
+            <TextView
+                android:textColor="@drawable/selector_tv_bg"
+                android:onClick="onClick"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/wallet"
+                android:text="钱包" />
+
+            <TextView
+                android:textColor="@drawable/selector_tv_bg"
+                android:onClick="onClick"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:text="优惠券" />
+            <TextView
+                android:textColor="@drawable/selector_tv_bg"
+                android:onClick="onClick"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:text="优惠券" />
+            <TextView
+                android:textColor="@drawable/selector_tv_bg"
+                android:onClick="onClick"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:text="优惠券" />
+            <TextView
+                android:textColor="@drawable/selector_tv_bg"
+                android:onClick="onClick"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:text="优惠券" />
+            <TextView
+                android:textColor="@drawable/selector_tv_bg"
+                android:onClick="onClick"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:text="优惠券" />
+
+
+        </com.geohuo.dongnao.seniorui.widget.myDrawerLayout.MyDrawSlideBar>
+
+
+    </com.geohuo.dongnao.seniorui.widget.myDrawerLayout.MyDrawLayout>
+
+</RelativeLayout>

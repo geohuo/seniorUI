@@ -1,9 +1,10 @@
 #include <jni.h>
 #include <string>
 
+
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_geohuo_dongnao_seniorui_MainActivity_stringFromJNI(
+Java_com_geohuo_dongnao_seniorui_ui_MainActivity_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "Hello from C++";

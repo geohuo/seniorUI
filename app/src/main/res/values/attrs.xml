@@ -35,4 +35,8 @@
         <attr name="tvTextSize" format="dimension"/>
         <attr name="btnTextSize" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="SideBar">
+        <attr name="maxTranslationX" format="dimension" />
+    </declare-styleable>
 </resources>

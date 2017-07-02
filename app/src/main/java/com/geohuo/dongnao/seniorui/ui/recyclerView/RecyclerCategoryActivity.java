@@ -1,4 +1,4 @@
-package com.geohuo.dongnao.seniorui.ui;
+package com.geohuo.dongnao.seniorui.ui.recyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,16 +12,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.geohuo.dongnao.seniorui.R;
-import com.geohuo.dongnao.seniorui.ui.DrawerLayoutActivity.DrawerLayoutActivity;
-import com.geohuo.dongnao.seniorui.ui.DrawerLayoutActivity.MyDrawerLayoutActivity;
-import com.geohuo.dongnao.seniorui.ui.recyclerView.RecyclerCategoryActivity;
-import com.geohuo.dongnao.seniorui.viewPager.WelcomeActivity;
 
 /**
  * Created by geohuo on 2017/6/20.
  */
 
-public class CategoryActivity extends AppCompatActivity {
+public class RecyclerCategoryActivity extends AppCompatActivity {
     private ListView mListView;
 
     private LayoutInflater mInflater;
@@ -29,13 +25,7 @@ public class CategoryActivity extends AppCompatActivity {
 
     private Class[] CLAZZES = new Class[]
             {
-                    MainActivity.class,
-                    WelcomeActivity.class,
-                    SplashActivity.class,
-                    RecyclerCategoryActivity.class,
-                    MyDrawerLayoutActivity.class,
-                    DrawerLayoutActivity.class,
-                    SvgActivity.class
+                    LayoutManageActivity.class
 
             };
 
@@ -74,7 +64,7 @@ public class CategoryActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(CategoryActivity.this, CLAZZES[position]);
+                Intent intent = new Intent(RecyclerCategoryActivity.this, CLAZZES[position]);
                 //intent.putExtra(BaseContentActivity.TITLE, CLAZZES[position].getSimpleName());
                 startActivity(intent);
             }
