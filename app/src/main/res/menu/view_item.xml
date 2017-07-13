@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="查找"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="设置"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="100"
+        android:title="设置1"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="100"
+        android:title="设置2"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+
+    <item
+        android:id="@+id/action_settings3"
+        android:orderInCategory="100"
+        android:title="设置3"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+    <!--<item-->
+        <!--android:id="@+id/action_share"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="分享"-->
+        <!--android:icon="@android:drawable/ic_menu_share"-->
+        <!--app:showAsAction="always"/>-->
+</menu>
+
+<!--
+//showAsAction这个属性的值有：
+//1、always：使菜单项一直显示在ToolBar上。
+//2、ifRoom：如果有足够的空间，这个值会使菜单项显示在ToolBar上。
+//3、never：使菜单项永远都不出现在ToolBar上,在…的子项中显示。
+//4、withText：使菜单项和它的图标，菜单文本一起显示。
+-->

@@ -5,42 +5,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <Button
-        android:id="@+id/onClick"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="点击"
 
-        android:onClick="onClick"
-        android:layout_gravity="center"
-        />
+    <com.geohuo.dongnao.seniorui.widget.MToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showRight="true"
+        app:mtitle="demo" />
+
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
         <!--内容区-->
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="内容区"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
-            />
-        <!--c侧滑菜单  layout_gravity end-->
-        <LinearLayout
-            android:background="@color/colorAccent"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_gravity="end"
-            >
-
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="这是菜单"
-            />
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="内容区" />
+        <!--c侧滑菜单  layout_gravity end-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/orange"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="这是菜单" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="这是菜单" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="这是菜单" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="这是菜单" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="这是菜单" />
         </LinearLayout>
 
 

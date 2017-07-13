@@ -1,7 +1,6 @@
 package com.geohuo.dongnao.seniorui.ui.DrawerLayoutActivity;
 
 import android.os.Bundle;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -19,9 +18,9 @@ public class DrawerLayoutActivity extends AppCompatActivity  implements DrawerLa
         drawerLayout.addDrawerListener(this);
     }
 
-    public void onClick(View view) {
-        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN, GravityCompat.END);
-    }
+//    public void onClick(View view) {
+//        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN, GravityCompat.END);
+//    }
 
     /**
      * drawerView   左菜单

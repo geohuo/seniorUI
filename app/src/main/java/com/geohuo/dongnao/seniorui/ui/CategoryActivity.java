@@ -12,8 +12,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.geohuo.dongnao.seniorui.R;
+import com.geohuo.dongnao.seniorui.ui.DrawerLayoutActivity.DrawerLayout1Activity;
 import com.geohuo.dongnao.seniorui.ui.DrawerLayoutActivity.DrawerLayoutActivity;
 import com.geohuo.dongnao.seniorui.ui.DrawerLayoutActivity.MyDrawerLayoutActivity;
+import com.geohuo.dongnao.seniorui.ui.materialDesign.AppBarLayoutActivity;
+import com.geohuo.dongnao.seniorui.ui.materialDesign.FabActivity;
+import com.geohuo.dongnao.seniorui.ui.materialDesign.TablayoutActivity;
+import com.geohuo.dongnao.seniorui.ui.materialDesign.TestActivity;
+import com.geohuo.dongnao.seniorui.ui.materialDesign.WangYiMusicActivity;
 import com.geohuo.dongnao.seniorui.ui.recyclerView.RecyclerCategoryActivity;
 import com.geohuo.dongnao.seniorui.viewPager.WelcomeActivity;
 
@@ -35,8 +41,26 @@ public class CategoryActivity extends AppCompatActivity {
                     RecyclerCategoryActivity.class,
                     MyDrawerLayoutActivity.class,
                     DrawerLayoutActivity.class,
-                    SvgActivity.class
+                    DrawerLayout1Activity.class,
+                    SvgActivity.class,
+                    LoadingActivity.class,
+                    SnackbarActivity.class,
+                    ToolbarActivity.class,
+                    TablayoutActivity.class,
+                    WangYiMusicActivity.class,
+                    TestActivity.class,
+                    FabActivity.class,
+                    AppBarLayoutActivity.class
 
+            };
+
+    private String[] titles =
+            {"MainActivity", "启动引导页面", "广告页面",
+                    "RecyclerView", "侧滑菜单1", "侧滑菜单2",
+                    "侧滑菜单3", "Svg地图", "Loading页面",
+                    "snackbar","ToolBar","TabLayout",
+                    "网易云音乐首页","测试页面",
+                    "Fab","AppBarLayout"
             };
 
     @Override
@@ -60,11 +84,12 @@ public class CategoryActivity extends AppCompatActivity {
                                  @Override
                                  public View getView(int position, View convertView, ViewGroup parent) {
                                      String title = getItem(position).getSimpleName();
+
                                      if (convertView == null) {
                                          convertView = mInflater.inflate(R.layout.item_category, parent, false);
                                      }
                                      TextView tv = (TextView) convertView.findViewById(R.id.id_title);
-                                     tv.setText(title);
+                                     tv.setText(titles[position]);
                                      return convertView;
                                  }
                              }
