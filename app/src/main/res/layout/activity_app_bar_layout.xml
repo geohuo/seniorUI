@@ -13,9 +13,9 @@
         <android.support.design.widget.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:contentScrim="@color/colorPrimary"
             app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
-            app:contentScrim="@color/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <ImageView
@@ -28,30 +28,33 @@
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
+                style="@style/Toolbar.MyStyle"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_arrow_back"
                 app:popupTheme="@style/popup_theme"
                 app:title="hello world"
-                style="@style/Toolbar.MyStyle"
-                app:titleTextAppearance="@style/Toolbar.TitleText"
-                app:navigationIcon="@drawable/ic_arrow_back"
-                app:layout_collapseMode="pin" />
+                app:titleTextAppearance="@style/Toolbar.TitleText" />
 
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
-
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
+        <LinearLayout
+            android:id="@+id/ll_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/my_txt"
-            android:textSize="20sp" />
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
 
@@ -61,10 +64,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:rippleColor="@color/colorPrimaryDark"
+        android:src="@drawable/ic_add_black_24dp"
         app:backgroundTint="@color/colorPrimary"
         app:layout_behavior="com.geohuo.dongnao.seniorui.ui.materialDesign.FloatingButtonBehavior"
-        android:src="@drawable/ic_add_black_24dp"
-        />
+        app:rippleColor="@color/colorPrimaryDark" />
 
 </android.support.design.widget.CoordinatorLayout>

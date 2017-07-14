@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/shader_bitmap"
+        android:orderInCategory="100"
+        android:title="BitmapShader"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+
+
+    <item
+        android:id="@+id/shader_compose"
+        android:orderInCategory="100"
+        android:title="ComposeShader"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+
+    <item
+        android:id="@+id/shader_sweepGradient"
+        android:orderInCategory="100"
+        android:title="SweepGradient"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+
+    <item
+        android:id="@+id/shader_linearGradient"
+        android:orderInCategory="100"
+        android:title="LinearGradient"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+
+    <item
+        android:id="@+id/shader_radialGradient"
+        android:orderInCategory="100"
+        android:title="RadialGradient"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+    <item
+        android:id="@+id/shader_ShapeDrawable"
+        android:orderInCategory="100"
+        android:title="ShapeDrawable"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+    <item
+        android:id="@+id/shader_drawStar"
+        android:orderInCategory="100"
+        android:title="drawStar"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never|withText"/>
+    <!--<item-->
+
+    <!--BitmapShader, ShapeDrawable, SweepGradient,-->
+    <!--ComposeShader, LinearGradient, RadialGradient, drawStar;-->
+    <!--android:id="@+id/action_share"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="分享"-->
+    <!--android:icon="@android:drawable/ic_menu_share"-->
+    <!--app:showAsAction="always"/>-->
+</menu>
+
+    <!--
+    //showAsAction这个属性的值有：
+    //1、always：使菜单项一直显示在ToolBar上。
+    //2、ifRoom：如果有足够的空间，这个值会使菜单项显示在ToolBar上。
+    //3、never：使菜单项永远都不出现在ToolBar上,在…的子项中显示。
+    //4、withText：使菜单项和它的图标，菜单文本一起显示。
+    -->

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geohuo.dongnao.seniorui.ui.materialDesign.ConstraintLayoutActivity">
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button10"
+        tools:layout_constraintBaseline_creator="1" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintRight_toLeftOf="@+id/button9"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="41dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintRight_toLeftOf="@+id/editText"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="17dp"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_editor_absoluteY="138dp"
+        android:layout_marginRight="17dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintRight_toLeftOf="@+id/editText2"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+        tools:layout_constraintBaseline_creator="1" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="124dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/editText"
+        android:layout_marginTop="31dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editText" />
+</android.support.constraint.ConstraintLayout>

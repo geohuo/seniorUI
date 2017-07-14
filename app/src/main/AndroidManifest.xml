@@ -56,9 +56,8 @@
         <activity android:name=".ui.LoadingActivity" />
         <activity android:name=".ui.SnackbarActivity" />
         <activity
-            android:name=".ui.ToolbarActivity"
+            android:name=".ui.materialDesign.ToolbarActivity"
             android:theme="@style/AppTheme.NoActionBar2" />
-        <activity android:name=".ui.materialDesign.ToolbarActivity" />
         <activity android:name=".ui.materialDesign.TablayoutActivity" />
         <activity
             android:name=".ui.materialDesign.WangYiMusicActivity"
@@ -66,7 +65,9 @@
         <activity android:name=".ui.materialDesign.TestActivity" />
         <activity android:name=".ui.materialDesign.CardviewActivity" />
         <activity android:name=".ui.materialDesign.FabActivity" />
-        <activity android:name=".ui.materialDesign.AppBarLayoutActivity"></activity>
+        <activity android:name=".ui.materialDesign.AppBarLayoutActivity" />
+        <activity android:name=".ui.materialDesign.ConstraintLayoutActivity" />
+        <activity android:name=".ui.basicUI.Shader.ShaderActivity"></activity>
     </application>
 
 </manifest>

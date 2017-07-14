@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.geohuo.dongnao.seniorui.ui.ToolbarActivity">
+    tools:context="com.geohuo.dongnao.seniorui.ui.materialDesign.ToolbarActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
